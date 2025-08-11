@@ -33,22 +33,21 @@ O Forumhub é uma plataforma de discussões desenvolvida para facilitar a comuni
 ## 📡 API Endpoints
 
 ### Autenticação
-- `POST /api/auth/register` - Registrar usuário
+- `POST /api/auth/auth` - Registrar usuário
 - `POST /api/auth/login` - Login
-- `POST /api/auth/logout` - Logout
 
 ### Tópicos
-- `GET /api/topics` - Listar tópicos
-- `POST /api/topics` - Criar tópico
-- `GET /api/topics/{id}` - Buscar tópico
-- `PUT /api/topics/{id}` - Atualizar tópico
-- `DELETE /api/topics/{id}` - Deletar tópico
+- `GET /api/topicos` - Listar tópicos
+- `POST /api/topicos` - Criar tópico
+- `GET /api/topicos/{id}` - Buscar tópico
+- `PUT /api/topicos/{id}` - Atualizar tópico
+- `DELETE /api/topicos/{id}` - Deletar tópico
 
 ### Respostas
-- `GET /api/topics/{id}/responses` - Listar respostas
-- `POST /api/topics/{id}/responses` - Criar resposta
-- `PUT /api/responses/{id}` - Atualizar resposta
-- `DELETE /api/responses/{id}` - Deletar resposta
+- `GET /api/topics/{id}/respostas` - Listar respostas
+- `POST /api/topics/{id}/respostas` - Criar resposta
+- `PUT /api/respostas/{id}` - Atualizar resposta
+- `DELETE /api/respostas/{id}` - Deletar resposta
 
 ## 📚 Estrutura do Projeto
 
