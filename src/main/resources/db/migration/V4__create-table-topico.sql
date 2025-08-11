@@ -1,0 +1,13 @@
+CREATE TABLE topico (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(200) NOT NULL,
+    mensagem TEXT NOT NULL,
+    data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(50) NOT NULL DEFAULT 'NAO_RESPONDIDO',
+    autor BIGINT NOT NULL,
+    curso BIGINT NOT NULL,
+    respostas INT DEFAULT 0,
+    PRIMARY KEY (id),
+    FOREIGN KEY (autor) REFERENCES usuario(id),
+    FOREIGN KEY (curso) REFERENCES curso(id)
+);
